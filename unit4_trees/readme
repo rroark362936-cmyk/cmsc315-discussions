@@ -1,1 +1,19 @@
+# Unit 4 Discussion: Binary Search Trees
 
+## Overview
+
+This project was about learning how Binary Search Trees (BSTs) work and how to write recursive code to manage them.
+
+## What I Did
+
+- **Built the Tree Classes:** I made a `Node` class to hold the data and left/right pointers, and a `BST` class to keep track of the root node.
+- **Added Recursion for Insertion:** I wrote recursive methods that check if a new number is smaller or bigger than the current node so it gets placed in the right spot.
+- **Added Search:** I created a recursive search function to quickly find if a value is in the tree or not.
+- **In-Order Traversal:** I wrote an in-order traversal method that visits nodes from left to right, which automatically prints out all the numbers in sorted order.
+- **Tested Edge Cases:** I tested what happens when searching or traversing an empty tree to make sure the code doesn't crash.
+
+## Discussion Board Reflection
+
+Working on this assignment helped me figure out how Binary Search Trees work and how to write recursive functions for tree operations. My biggest hurdle was figuring out how the recursive functions pass updated node references back up the tree when inserting new values. I got stuck on that for a bit, but I figured it out by stepping through the code line by line and keeping track of what each recursive call returned.
+
+BSTs make searching a lot faster because every time you compare a value, you get to throw away half of the remaining tree, which works like binary search. But the tricky thing about a simple BST is that if you insert numbers in order (like 1, 2, 3, 4), the tree turns into a straight line—basically a linked list. When that happens, searching gets slow because you have to check every single node one by one instead of splitting the search in half.
